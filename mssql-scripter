@@ -2,4 +2,4 @@
 
 set -e
 
-docker run --rm -it mssql-scripter "$@"
+docker run --rm -it kwalter94/mssqlscripter:latest "$@"
