@@ -1,5 +1,7 @@
 FROM python:3.7-slim
 
+WORKDIR /data
+
 # mssql-scripter has some dependencies on some old libraries
 # that aren't available on debian versions after Debian Buster.
 
