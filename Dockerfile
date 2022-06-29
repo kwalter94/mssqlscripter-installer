@@ -11,7 +11,7 @@ RUN echo "deb http://security.debian.org/debian-security buster/updates main" >>
 RUN echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
 
 RUN apt-get update
-RUN apt-get install -y curl libffi-dev libunwind8 python-dev libicu63
+RUN apt-get install -y curl libffi-dev libunwind8 python-dev libicu63 libssl1.0.2
 
 RUN python -m pip install --upgrade pip
 RUN python -m pip install mssql-scripter
